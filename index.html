@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <!-- Reset style -->
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+    <!-- bootstrap library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- moment JS library -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="title text-center">Train Schedule</h1>
+            <h4 class="description text-center">View the train schedule to see when your train arrives</h4>
+        </div>
+        <div class="card">
+            <div class="card-title">Current Train Schedule</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="card">
+            <div class="card-title">Add A Train</div>
+            <form>
+                <div class="form-group">
+                    <label for="trainName">Train Name</label>
+                    <input type="text" class="form-control" id="trainName" placeholder="ChooChoo express">
+                </div>
+                <div class="form-group">
+                    <label for="Destination">Destination</label>
+                    <input type="text" class="form-control" id="destination" placeholder="Chicago, Illinois">
+                </div>
+                <div class="form-group">
+                    <label for="trainTime">First Train Time (hh:mm - military time)</label>
+                    <input type="time hh:mm" class="form-control" id="trainTime" placeholder="23:00">
+                </div>
+                <div class="form-group">
+                    <label for="Frequency">Frequency(mm)</label>
+                    <input type="number" class="form-control" id="frequency" placeholder="15">
+                </div>
+                <button type="button" class="btn-primary" id="addTrain">Submit</button>
+            </form>
+        </div>
+    </div>
+<!-- Javascript -->
+<script rel="text/javascript" src="assets/Javascript/app.js"></script>
+</body>
+</html>

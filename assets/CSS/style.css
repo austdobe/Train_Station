@@ -1,0 +1,25 @@
+body{
+    background-color:whitesmoke;
+    color: black;
+}
+.table{
+    color: black;
+}
+.jumbotron{
+    background-color: darkred;
+    color: whitesmoke;
+}
+.card{
+    background-color: whitesmoke;
+    margin: 20px 0;
+    padding: 10px 10px;
+    border: lightblue 1px groove;
+}
+.card-title{
+    background-color: navy;
+    padding: 10px 20px;
+    color: whitesmoke
+}
+form{
+    margin: 10px;
+}
